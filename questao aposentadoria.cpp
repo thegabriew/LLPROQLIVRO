@@ -11,17 +11,18 @@ int main (){
 	printf("\nInsira o ano em que o trabalhador foi contratado: ");
 	scanf("%d",&cont);
 	
-	if(nasc>=1957){
+	
+	if(nasc<=1957){
 		
 		printf("Requerer aposentadoria");
-	} else  if(cont>=1990){
+	} else  if(cont<=1990){
 		printf("Requerer aposentadoria");
 
-	} else if( (nasc>=1960)&& (cont>=1995)){
-		printf("Requerer aposentadoria");
+	} else if( (nasc<=1960)&& (cont<=1995)){
+		printf("\nRequerer aposentadoria");
 
 	}
 	 else {
-		printf("Nao requerer aposentadoria");
+		printf("\nNao requerer aposentadoria");
 	}
 }
