@@ -3,19 +3,24 @@
 int main (){
 	
 	int alunos;
-	float media, notas;
+	float media, notas, notac;
 	int i = 0;
 	
 	
 	printf("Insira a quantidade de alunos: ");
 	scanf("%d",&alunos);
 	
-	do{
+		while(i<alunos){
 		printf("Insira a nota do aluno: ");
-		scanf("%d",&notas);
+		scanf("%f",&notas);
 		
-		notas = notas++;
+		notac = notac + notas;
+		i += 1; 
 	
-	} while (i>alunos);
+	} 
+	
+	media = (float) notac/alunos;
+	
+	printf("\nA media da turma equivale a %.2f",media);
 	
 }
